@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <div className="Footer">
-            <h2>Footer</h2>
+            <h2 style={{color: '#FBEEC1'}}>Footer</h2>
         </div>
     );
 }
