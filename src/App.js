@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat", 
     backgroundSize: "cover",
     direction: "row",
+    zIndex: -1,
     
   },
   intro: {
@@ -44,8 +45,9 @@ function App() {
   const classes = useStyles();
 
   return (
-    <div style={{height: '100%', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundColor: '#659DBD'}}className="App">
+    <div style={{ backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}className="App">
       <Header />
+      <div style={{paddingTop: 80}}>
       <Grid container className={classes.image} direction="row" spacing={0} alignItems="center">
           <Grid item lg={2} md={4} sm={6} xs={10}>
             <Avatar variant="circle" alt="Jacob O'Reilly" src={require('./img/avatar.jpg')} className={classes.avatar}></Avatar>
@@ -57,20 +59,20 @@ function App() {
       </Grid>
       <Grid container
             direction="column"
-            alignItems="center"
-            justify="space-between"
+            justify="space-evenly"
             spacing={0}>
-        <Grid item conatainer xs={5}>
+        <Grid item conatainer lg={6}>
           <About />
         </Grid>
-        <Grid item xs={4}>
+        <Grid  item lg={6}>
           <Projects />
         </Grid>
-        <Grid item xs={4}>
+        <Grid  item lg={6}>
           <Contact />
         </Grid>
       </Grid>
       <Footer />
+      </div>
     </div>
   );
 }
