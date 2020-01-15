@@ -21,7 +21,7 @@ function About() {
     return (
        <div className="About" id="about">
             <h2 style={{color: '#FBEEC1'}}>A little about me...</h2>
-            <Grid
+            <Grid container style={{marginTop: "10%"}}
                 spacing={0}
                 direction="column"
                 alignItems="center"

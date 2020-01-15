@@ -34,13 +34,20 @@ function Header() {
     <div className={classes.header}>
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <h1 className={classes.title}>Jacob O'Reilly</h1>
+          <Link activeClass="active"
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>
+                <h1 className={classes.title}>Jacob O'Reilly</h1>
+          </Link>
           <div className={classes.buttons}>
             <Link activeClass="active"
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-75}
                   duration={500}>
                   <Button className={classes.buttonStyle}>About</Button>
             </Link>
@@ -48,7 +55,7 @@ function Header() {
                   to="projects"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-75}
                   duration={500}>
                   <Button className={classes.buttonStyle}>Projects</Button>
             </Link> 
@@ -56,7 +63,7 @@ function Header() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-75}
                   duration={500}>
                   <Button className={classes.buttonStyle}>Contact</Button>
             </Link> 
