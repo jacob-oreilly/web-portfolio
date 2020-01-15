@@ -9,8 +9,9 @@ import { Grid, makeStyles, Avatar, Typography } from '@material-ui/core';
 import CropBike from './img/cropbike.JPG';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faBlenderPhone } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab);
+library.add(fab, faEnvelope, faPhone);
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -68,7 +69,7 @@ function App() {
             </div>
           </div>
           <div style={{ marginTop: "40%" }} class="row align-items-center justify-content-md-center">
-            <div style={{}} class="col-6">
+            <div style={{}} class="col-12">
               <Projects />
             </div>
           </div>
@@ -78,7 +79,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ marginTop: "40%" }}>
+        <div style={{ marginTop: "18%" }}>
           <Footer />
         </div>
       </div>
