@@ -75,11 +75,11 @@ function App() {
               <Projects />
             </div>
           </div>
-          <div style={{ marginTop: "40%" }} class="row align-items-center justify-content-md-center">
+          {/* <div style={{ marginTop: "40%" }} class="row align-items-center justify-content-md-center">
             <div class="col-12">
               <Contact />
             </div>
-          </div>
+          </div> */}
         </div>
         <div style={{ marginTop: "18%" }}>
           <Footer />

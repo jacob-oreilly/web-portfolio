@@ -7,7 +7,7 @@ library.add(fab);
 
 function Footer() {
     return (
-        <div className="Footer">
+        <div className="Footer" id="contact">
             {/* <div style={{}} class="container">
                 <div class="row align-items-start justify-content-md-center">
                     <div class="col-2">
@@ -24,12 +24,13 @@ function Footer() {
                     </div>
                 </div>
             </div> */}
-            <footer style={{marginTop: -50}} id="sticky-footer" class="py-4 bg-dark text-white-50">
-                <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                    <a style={{marginRight: 10}} href="https://www.linkedin.com/in/jacoboreilly23/"><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="lg"/></a>
-                    <a href="https://github.com/jacob-oreilly"><FontAwesomeIcon icon={['fab', 'github-alt']} size="lg"/></a>
+            <footer style={{ marginTop: -50 }} id="sticky-footer" class="py-4 bg-dark text-white-50">
+                <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                    <a style={{ marginRight: 10 }} href="https://www.linkedin.com/in/jacoboreilly23/"><FontAwesomeIcon sytle={{color: '#8D8741'}} icon={['fab', 'linkedin-in']} size="lg" /></a>
+                    <a style={{ marginRight: 10 }} href="https://github.com/jacob-oreilly"><FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" /></a>
+                    <a target="_top" rel="noopener noreferrer" href="mailto:Jacob_OReilly@outlook.com"><FontAwesomeIcon icon="envelope" /></a>
                 </div>
-                <div style={{marginBottom: 30}} class="container text-center">
+                <div style={{ marginBottom: 30 }} class="container text-center">
                     <small>Copyright &copy; Jacob O'Reilly</small>
                 </div>
             </footer>
