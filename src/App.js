@@ -5,11 +5,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Title from './components/Title';
 import { Grid, makeStyles, Avatar, Typography } from '@material-ui/core';
-import CropBike from './img/cropbike.JPG';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faBlenderPhone } from '@fortawesome/free-solid-svg-icons';
+import CropBike from './img/cropbike.JPG';
 
 library.add(fab, faEnvelope, faPhone);
 
@@ -50,10 +51,11 @@ function App() {
   const classes = useStyles();
 
   return (
-    <div id="top" style={{ backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className="App">
+    <div id="top" className="App">
       <Header />
       <div style={{ paddingTop: 64 }}>
-        <Grid container className={classes.image} direction="row" spacing={0} alignItems="center">
+        <Title />
+        {/* <Grid container className={classes.image} direction="row" spacing={0} alignItems="center">
           <Grid item lg={2} md={4} sm={6} xs={10}>
             <Avatar variant="circle" alt="Jacob O'Reilly" src={require('./img/avatar.jpg')} className={classes.avatar}></Avatar>
           </Grid>
@@ -61,10 +63,10 @@ function App() {
             <Typography className={classes.intro} variant="h6">Software Engineer</Typography>
             <Typography className={classes.intro} variant="h6">Fargo, ND</Typography>
           </Grid>
-        </Grid>
+        </Grid> */}
         <div style={{ marginTop: "10%" }} class="container">
           <div class="row align-items-start justify-content-md-center">
-            <div class="col-6">
+            <div class="col-12">
               <About />
             </div>
           </div>
@@ -73,8 +75,8 @@ function App() {
               <Projects />
             </div>
           </div>
-          <div style={{ marginTop: "40%" }} class="row align-items-end justify-content-md-center">
-            <div class="col">
+          <div style={{ marginTop: "40%" }} class="row align-items-center justify-content-md-center">
+            <div class="col-12">
               <Contact />
             </div>
           </div>
