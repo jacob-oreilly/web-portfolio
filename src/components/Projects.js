@@ -35,11 +35,11 @@ function Projects() {
                     <div className="row align-items-start justify-content-md">
                         <div className="col-lg-6 col-sm-12">
                             <Typography align="left" color="primary" paragraph={true}>
-                                AveryAndDuncan.com was the first one of the first projects I did.
-                                I had a couple of friends that were in a band together. The needed a
-                                place to post updates on when shows were and show all the videos
-                                they recorded. This project allowed me to get my first bit of taste with
-                                HTML and CSS.
+                                AveryAndDuncan.com was one of the first projects I did.
+                                I had a couple of friends that were in a band together. They needed a
+                                place to post updates about when shows were and display videos that they
+                                recorded.With this project I was able to get my first taste of HTML, CSS, and
+                                even hosting on GitHub Pages.
                         </Typography>
                         </div>
                         <div className="col-lg-6 col-sm-12">
