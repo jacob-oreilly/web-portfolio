@@ -7,7 +7,6 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         width: theme.spacing(20),
         height: theme.spacing(20),
-        marginLeft: theme.spacing(10),
     },
     intro: {
         color: '#8D8741',
@@ -27,17 +26,18 @@ function Title() {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100%",
-                direction: "row",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
                 zIndex: -1,
             }} className="container">
-                <div className="row align-items-start justify-content-md-center">
-                    <div className="col-sm-12 col-lg-3 align-self-center">
+                <div>
+                    <div>
                         <Avatar variant="circle" alt="Jacob O'Reilly" src={require('../img/avatar.jpg')} className={classes.avatar}></Avatar>
                     </div>
-
                 </div>
-                <div style={{marginLeft: "2%"}} className="row align-items-start justify-content-md-center">
-                    <div className="col-sm-12 col-lg-4 align-self-center">
+                <div>
+                    <div>
                         <Typography className={classes.intro} variant="h6">Software Engineer</Typography>
                         <Typography className={classes.intro} variant="h6">Fargo, ND</Typography>
                     </div>

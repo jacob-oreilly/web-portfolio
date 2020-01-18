@@ -70,7 +70,7 @@ function Header() {
                     smooth={true}
                     offset={-75}
                     duration={500}>
-                    <Button className={classes.buttonStyle}>Contact</Button>
+                    <Button className={classes.buttonStyle}>Links</Button>
                   </Link>
                 </div>
               </div>
